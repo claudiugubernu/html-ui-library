@@ -1,0 +1,24 @@
+// Handle the .site-width
+
+:root {
+    --site-width-margin: 140;
+}
+
+.site-width {
+    margin: 0 auto;
+    max-width: 1920px;
+    @include rs("padding-left", $ss, $site-width-margin);
+    @include rs("padding-right", $ss, $site-width-margin);
+
+    @include sm-down() {
+        padding-left: $m-site-width-margin + #{px};
+        padding-right: $m-site-width-margin + #{px};
+    }
+}
+
+.site-width-soft {
+    margin: 0 auto;
+    // max-width: calc(1905px);
+    @include rs("max-width", $ss, 1610);
+    width: 100%;
+}

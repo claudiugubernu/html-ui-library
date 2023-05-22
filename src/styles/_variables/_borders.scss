@@ -1,0 +1,8 @@
+// Handle all border styles
+
+:root {
+      /* Borders */
+  /* ------ */
+  --border-standard: 0.125rem solid var(--color-primary);
+  --border-standard-overlay: 0.125rem solid var( --color-white);
+}

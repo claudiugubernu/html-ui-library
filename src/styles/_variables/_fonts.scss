@@ -1,0 +1,117 @@
+// Handle all fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap');
+
+
+:root {
+  /* Fonts Defaults */
+  /* ------ */
+  --font-family-default:  'DM Sans', sans-serif;
+  --font-family-secondary: 'Space Grotesk', sans-serif;
+  --font-family-tertiary:  'Space Grotesk', sans-serif;
+
+  /* ------ */
+  --document-scale-default: 16px;
+  /* ------ */
+  --font-size-default: 1.25rem;
+  /* ------ */
+  --line-height-default: 2.1875rem;
+  /* ------ */
+  --font-color: --color-primary;
+  --font-color-overlay: --color-white;
+  /* ------ */
+  --link-color: var(--color-link);
+  --link-color-hover: var(--color-link);
+  --link-color-visited: var(--color-link);
+}
+
+// Content Wrapper Default Font Family (Frontend)
+.content-wrapper {
+  font-family: var(--font-family-default);
+}
+
+
+// Default Paragraph Styling
+p {
+  @include rs("margin-bottom", $fs, 15);
+  @include rs("margin-top", $fs, 15);
+  font-family: var(--font-family-default);
+  
+  @include md-down() {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @extend .ff-2;
+}
+
+// Default Document Font
+.document-font {
+  font-family: var(--font-family-default);
+  font-weight: 400;
+}
+
+// Font Family
+.ff-1 {
+  font-family: var(--font-family-default);
+  font-weight: 400;
+
+  i {
+    font-style: italic;
+  }
+
+  &.fw-medium {
+    font-weight: 500;
+  }
+}
+
+.ff-2 {
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+
+  &.fw-medium {
+    font-weight: 500;
+  }
+}
+
+// Text Shadows
+.t-shadow {
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+}
+
+// Uppercase
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+// Capitalize
+.tt-capitalize {
+  text-transform: capitalize;
+}
+
+// Text Align Center
+.text-right {
+  text-align: right;
+}
+
+// Text Align Center
+.text-center {
+  text-align: center;
+}
+
+// Text Align Justify
+.text-justify {
+  text-align: justify;
+
+  @include md-down() {
+    text-align: left;
+  }
+}
+
+// Bold font size
+b,
+strong,
+.tt-bold {
+  font-weight: 700;
+}

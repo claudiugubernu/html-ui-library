@@ -1,0 +1,33 @@
+:root {
+    --height: 1080;
+}
+
+$half-height: 540;
+$full-height: 1080;
+
+@include md-up() {
+    .h-1080 {
+        @include rs('min-height', $ss, $full-height);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .h-540 {
+        @include rs('min-height', $ss, $half-height);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@include ms-up() {
+    .h-1080,
+    .h-540 {
+        margin: 0 auto;
+    }
+}

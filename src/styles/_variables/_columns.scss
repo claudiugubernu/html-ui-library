@@ -1,0 +1,54 @@
+// Columns
+@each $size in $col {
+    .col-#{$size} {
+        @include rs("width", $ss, $size);
+    }
+}
+
+@include sm-down() {
+    @each $size in $col {
+        .m-col-#{$size} {
+            width: $size + px;
+        }
+    }
+}
+
+// View width
+
+@each $size in $vw {
+    .vw-#{$size} {
+        width: $size + vh;
+    }
+}
+
+@include sm-down() {
+    @each $size in $vw {
+        .m-vw-#{$size} {
+            width: $size + vh;
+        }
+    }
+}
+
+// Percentage width
+
+@each $size in $w {
+    .w-#{$size} {
+        width: $size + #{"%"};
+    }
+}
+
+@include md-down() {
+    @each $size in $w {
+        .md-w-#{$size} {
+            width: $size + #{"%"};
+        }
+    }
+}
+
+@include sm-down() {
+    @each $size in $w {
+        .m-w-#{$size} {
+            width: $size + #{"%"};
+        }
+    }
+}

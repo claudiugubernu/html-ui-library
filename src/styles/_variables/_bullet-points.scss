@@ -1,0 +1,32 @@
+// handle all bullet point styles
+
+.bullet-list {
+    list-style: none;
+    
+    li {
+        position: relative;
+        @include rs('margin-left', $ss, 20);
+
+        &:before {
+            content: " ";
+            display: block;
+            @include rs('height', $ss, 9);
+            @include rs('width', $ss, 9);
+            @include rs('left', $ss, -50);
+          
+            
+            border-radius: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--color-secondary);
+            position: absolute;
+        }
+    }
+}
+
+.ls-none {
+    &, ul {
+        list-style: none;
+        padding: 0;
+    }
+}

@@ -1,0 +1,111 @@
+/* Reference: https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+html:not(.wp-toolbar) {
+  box-sizing: border-box;
+  font-family: var(--font-family-default);
+  font-size: var(--document-scale-default);
+  color: var(--color-dark-text);
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family-default);
+  font-size: var(--document-scale-default);
+  line-height: auto;
+  color: var(--color-dark-text);
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+// .js_set_linknavicon {
+//   overflow: hidden;
+// }
+
+body:not(.wp-admin) {
+  //font-size: var(--font-size-default);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  // Fix footer to bottom of page
+  header {
+    flex: 0 1 auto;
+  }
+  
+  section {
+    margin: auto 0;
+    
+    &.content-wrapper:not(.has-hero) {
+      margin-top: 66px;
+  
+      @include md-up() {
+        @include rs('margin-top', $ss, 152);
+      }
+    }
+  }
+  
+  footer {
+    flex-shrink: 0;
+    z-index: 35;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  a:not(.btn, .link) {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+  }
+  /* stylelint-enable */
+  a:not(.btn, .link):visited {
+    color: var(--link-color-visited);
+  }
+
+  a:not(.btn, .link):hover,
+  a:not(.btn, .link):focus,
+  a:not(.btn, .link):active {
+    color: var(--link-color-hover);
+    opacity: 0.7;
+  }
+
+  p a {
+    color: var(--color-primary) !important;
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+
+  h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  .article-body {
+    &:last-child {
+      overflow: hidden;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}

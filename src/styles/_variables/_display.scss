@@ -1,0 +1,16 @@
+$sizes: flex, block, grid, none;
+
+// padding
+@each $size in $sizes {
+    .#{$size} {
+        display: $size;
+    }
+}
+
+@include sm-down() {
+    @each $size in $sizes {
+        .m-#{$size} {
+            display: $size;
+        }
+    }
+}

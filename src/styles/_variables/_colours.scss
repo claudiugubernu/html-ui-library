@@ -1,0 +1,76 @@
+// Handle all colours throughout the theme
+
+:root {
+  /* Colours Defaults */
+  /* ------ */
+  
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #000;
+  --color-link: transparent;
+  --color-light-text: #000;
+  --color-dark-text: #000;
+  --color-secondary: #000;
+  --color-tertiary: transparent;
+  --color-quaternary: transparent;
+  --color-quinary: transparent;
+  --color-senary: transparent;
+  --color-septenary: transparent;
+  --color-octonary: transparent;
+  --color-error: #DC3545;
+  --link-color-hover: transparent;
+}
+
+.c-white {
+  color: var(--color-white);
+}
+
+.c-black {
+  color: var(--color-black);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.c-dark {
+  color: var(--color-dark-text);
+}
+
+.c-light {
+  color: var(--color-light-text);
+}
+
+.c-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light-text);
+}
+
+.c-primary-faded {
+  color: var(--color-primary-faded);
+}
+
+.bg-primary-faded {
+  background-color: var(--color-primary-faded);
+}
+
+.c-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-dark-text);
+}
+
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}

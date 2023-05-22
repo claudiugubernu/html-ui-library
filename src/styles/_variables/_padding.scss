@@ -1,0 +1,119 @@
+// Handle all padding
+
+// padding
+@each $size in $padding {
+  .p-#{$size} {
+    @include rs("padding", $ss, $size);
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-p-#{$size} {
+      padding: $size + px;
+    }
+  }
+}
+
+// padding Vertical
+@each $size in $padding {
+  .pv-#{$size} {
+    @include rs("padding-top", $ss, $size);
+    @include rs("padding-bottom", $ss, $size);
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-pv-#{$size} {
+      padding-top: $size + px;
+      padding-bottom: $size + px;
+    }
+  }
+}
+
+// padding Horizontal
+@each $size in $padding {
+  .ph-#{$size} {
+    @include rs("padding-left", $ss, $size);
+    @include rs("padding-right", $ss, $size);
+  }
+}
+
+@include md-down() {
+  @each $size in $padding {
+    .md-ph-#{$size} {
+      padding-left: $size + px;
+      padding-right: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-ph-#{$size} {
+      padding-left: $size + px;
+      padding-right: $size + px;
+    }
+  }
+}
+
+// padding Top
+@each $size in $padding {
+  .pt-#{$size} {
+    @include rs("padding-top", $ss, $size);
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-pt-#{$size} {
+      padding-top: $size + px;
+    }
+  }
+}
+
+// padding Bottom
+@each $size in $padding {
+  .pb-#{$size} {
+    @include rs("padding-bottom", $ss, $size);
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-pb-#{$size} {
+      padding-bottom: $size + px;
+    }
+  }
+}
+
+// padding Left
+@each $size in $padding {
+  .pl-#{$size} {
+    @include rs("padding-left", $ss, $size);
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-pl-#{$size} {
+      padding-left: $size + px;
+    }
+  }
+}
+
+// padding Right
+@each $size in $padding {
+  .pr-#{$size} {
+    @include rs("padding-right", $ss, $size);
+  }
+}
+
+@include sm-down() {
+  @each $size in $padding {
+    .m-pr-#{$size} {
+      padding-right: $size + px;
+    }
+  }
+}

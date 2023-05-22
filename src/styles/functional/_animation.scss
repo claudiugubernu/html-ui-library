@@ -1,0 +1,145 @@
+body:not(.wp-admin) {
+  .ani-fade {
+    opacity: 0;
+  }
+
+  .ani-short-line {
+    position: relative;
+    &:after {
+      background-color: var(--color-primary);
+      content: " ";
+      display: block;
+      height: 1px;
+      position: absolute;
+      width: 0;
+      bottom: 0px;
+    }
+  }
+
+  .ani-fade-up {
+    opacity: 0;
+    position: relative;
+    top: 1vw;
+  }
+  
+  .ani-fade-right {
+    opacity: 0;
+    position: relative;
+    left: 30vw;
+  }
+
+  .ani-fade-up-text {
+    .fs-60 {
+      opacity: 0;
+      position: relative;
+      top: 1vw;
+    }
+
+    p {
+      opacity: 0;
+      position: relative;
+      top: 1vw;
+    }
+    
+    .button {
+      opacity: 0;
+      position: relative;
+      top: 1vw;
+    }
+  }
+
+  .ani-line {
+    &:after {
+      width: 0%;
+    }
+  }
+
+  .is-animating {
+    &.ani-short-line {
+      &:after {
+        width: 100%;
+        transition: 580ms linear width 80ms;
+      }
+    }
+
+    &.ani-line {
+      &:after {
+        width: 100%;
+        transition: 380ms linear width 20ms;
+      }
+    }
+
+    &.ani-fade {
+      opacity: 1;
+      transition: 380ms linear opacity 20ms, 380ms linear top 80ms;
+    }
+
+    &.ani-fade-up {
+      opacity: 1;
+      top: 0;
+      transition: 380ms linear opacity 120ms, 380ms linear top 100ms;
+    }
+    
+    &.ani-fade-right {
+      opacity: 1;
+      left: 0;
+      transition: 380ms linear opacity 20ms, 380ms linear left 80ms;
+    }
+
+    &.ani-fade-up-text {
+      transition: 380ms linear opacity 20ms, 380ms linear top 80ms;
+
+      .fs-60 {
+        opacity: 1;
+        top: 0;
+        transition: 380ms linear opacity 20ms, 380ms linear top 80ms;
+      }
+
+      p {
+        opacity: 1;
+        top: 0;
+        transition: 380ms linear opacity 20ms, 380ms linear top 80ms;
+      }
+      .button {
+        opacity: 1;
+        top: 0;
+        transition: 380ms linear opacity 20ms, 380ms linear top 80ms;
+      }
+    }
+  }
+
+  .ani-delay-short.is-animating {
+    &,
+    .fs-60 {
+      transition-delay: 200ms;
+    }
+
+    p:nth-of-type(2) {
+      transition-delay: 600ms;
+    }
+
+    p:nth-of-type(3) {
+      transition-delay: 900ms;
+    }
+
+    p:nth-of-type(4) {
+      transition-delay: 1100ms;
+    }
+
+    p:nth-of-type(5) {
+      transition-delay: 1300ms;
+    }
+
+    p:nth-of-type(6) {
+      transition-delay: 1500ms;
+    }
+
+    p:nth-of-type(7) {
+      transition-delay: 1700ms;
+    }
+
+    p:nth-of-type(8) {
+      transition-delay: 1900ms;
+    }
+  }
+}

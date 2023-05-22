@@ -1,0 +1,79 @@
+// Import managing all site variables
+
+$default-screen-width: 100%; /* Set the default screen width */
+
+/* ********* Define Site Scale *********/
+$ss: 0.4;
+
+/* ********* Define Site Scale *********/
+$fs: 0.5;
+
+/* ********* Define Site Gutters *********/
+$site-width-margin: 140; /* Desktop Left / Right Gutter */
+$m-site-width-margin: 30; /* Mobile Left / Right Gutter */
+
+/********* Define Gaps *********/
+/* Set All gaps for theme: .gap-30 */
+$gap: 0, 10, 20, 30, 36, 50, 60, 75, 100;
+
+/********* Define Z-INDEX *********/
+/* Set All z-index for theme: .z-100 */
+$zindex: 10, 20, 30, 40, 50, 60;
+
+/********* Define Widths *********/
+/* Columns/Width: .col-25 */
+$col: 0;
+/* ViewWidth: vw-100 */
+$vw: 10;
+/* Percentage: w-100 */
+$w: 10, 20, 25, 30, 35, 40, 50, 60, 70, 75, 80, 90, 100;
+
+/********* Define Heights *********/
+/* Rows/Height: .row-25 */
+$row: 0;
+/* ViewHeight: .vh-100 */
+$vh: 10;
+/* Percentage: .h-100 */
+$h: 10;
+
+/********* Define Padding + Margin *********/
+/* Padding: .p-10, .pv-10, .ph-10, .pt-10, .pl-10, .m-pt-10 */
+$padding: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200;
+/* Margin: .p-10, .pv-10, .ph-10, .pt-10, .pl-10, .m-pt-10 */
+$margin: 0, 5, 10, 20, 25, 30, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 250, 300;
+
+/********* Included SCSS files *********/
+/* ---- Responsive Styles ---- */
+@import "../_mixins/responsive-unit";
+@import "screen-size"; /* Define Custom Breakpoints Here */
+@import "../_mixins/responsive-sizes";
+
+/* ---- Colours, Fonts, Icons ---- */
+@import "colours"; /* Define all colours here */
+@import "fonts"; /* Define all fonts here */
+@import "icons"; /* Define all icons here */
+
+/* ---- Styles ---- */
+@import "transitions";
+@import "position";
+@import "img";
+@import "site-width";
+@import "padding";
+@import "margin";
+@import "borders";
+@import "seperator";
+@import "bullet-points";
+@import "column-count";
+@import "box-shadow";
+@import "text-align";
+@import "flex";
+@import "display";
+@import "gap";
+@import "columns";
+@import "rows";
+@import "z-index";
+@import "component-height";
+@import "_visibility";
+
+/* ---- */
+@import "reset";

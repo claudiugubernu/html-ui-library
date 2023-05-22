@@ -1,0 +1,297 @@
+// Handle all margins
+
+// Margin
+@each $size in $margin {
+  .m-#{$size} {
+    @include rs("margin", $ss, $size);
+  }
+}
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-m-#{$size} {
+      @include rs("margin", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-m-#{$size} {
+      margin: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-m-#{$size} {
+      margin: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-m-#{$size} {
+      margin: $size + px;
+    }
+  }
+}
+
+// Margin Vertical
+@each $size in $margin {
+  .mv-#{$size} {
+    @include rs("margin-top", $ss, $size);
+    @include rs("margin-bottom", $ss, $size);
+  }
+}
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-mv-#{$size} {
+      @include rs("margin-top", $ss, $size);
+      @include rs("margin-bottom", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-mv-#{$size} {
+      margin-top: $size + px;
+      margin-bottom: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-mv-#{$size} {
+      margin-top: $size + px;
+      margin-bottom: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-mv-#{$size} {
+      margin-top: $size + px;
+      margin-bottom: $size + px;
+    }
+  }
+}
+
+// Margin Horizontal
+@each $size in $margin {
+  .mh-#{$size} {
+    @include rs("margin-left", $ss, $size);
+    @include rs("margin-right", $ss, $size);
+  }
+}
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-mh-#{$size} {
+      @include rs("margin-left", $ss, $size);
+      @include rs("margin-right", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-mh-#{$size} {
+      margin-left: $size + px;
+      margin-right: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-mh-#{$size} {
+      margin-left: $size + px;
+      margin-right: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-mh-#{$size} {
+      margin-left: $size + px;
+      margin-right: $size + px;
+    }
+  }
+}
+
+// Margin Top
+@each $size in $margin {
+  .mt-#{$size} {
+    @include rs("margin-top", $ss, $size);
+  }
+}
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-mt-#{$size} {
+      @include rs("margin-top", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-mt-#{$size} {
+      margin-top: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-mt-#{$size} {
+      margin-top: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-mt-#{$size} {
+      margin-top: $size + px;
+    }
+  }
+}
+
+// Margin Bottom
+@each $size in $margin {
+  .mb-#{$size} {
+    @include rs("margin-bottom", $ss, $size);
+  }
+}
+
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-mb-#{$size} {
+      @include rs("margin-bottom", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-mb-#{$size} {
+      margin-bottom: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-mb-#{$size} {
+      margin-bottom: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-mb-#{$size} {
+      margin-bottom: $size + px;
+    }
+  }
+}
+
+// Margin Right
+@each $size in $margin {
+  .mr-#{$size} {
+    @include rs("margin-right", $ss, $size);
+  }
+}
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-mr-#{$size} {
+      @include rs("margin-right", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-mr-#{$size} {
+      margin-right: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-mr-#{$size} {
+      margin-right: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-mr-#{$size} {
+      margin-right: $size + px;
+    }
+  }
+}
+
+// Margin Left
+@each $size in $margin {
+  .ml-#{$size} {
+    @include rs("margin-left", $ss, $size);
+  }
+}
+
+@include xl-down() {
+  @each $size in $margin {
+    .xl-ml-#{$size} {
+      @include rs("margin-left", $ss, $size);
+    }
+  }
+}
+
+@include lg-down() {
+  @each $size in $margin {
+    .lg-ml-#{$size} {
+      margin-left: $size + px;
+    }
+  }
+}
+
+@include md-down() {
+  @each $size in $margin {
+    .md-ml-#{$size} {
+      margin-left: $size + px;
+    }
+  }
+}
+
+@include sm-down() {
+  @each $size in $margin {
+    .m-ml-#{$size} {
+      margin-left: $size + px;
+    }
+  }
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}

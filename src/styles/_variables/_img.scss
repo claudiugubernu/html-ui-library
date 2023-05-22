@@ -1,0 +1,20 @@
+// Handle all image logic
+
+.div-fill,
+img.div-fill {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.div-fill-soft,
+img.div-fill-soft {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
