@@ -1,13 +1,13 @@
 // Handle all fonts
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@200;300;400&display=swap');
 
 
 :root {
   /* Fonts Defaults */
   /* ------ */
-  --font-family-default:  'DM Sans', sans-serif;
-  --font-family-secondary: 'Space Grotesk', sans-serif;
-  --font-family-tertiary:  'Space Grotesk', sans-serif;
+  --font-family-default:  'Source Sans Pro', sans-serif;
+  --font-family-secondary: 'Playfair Display', serif;
+  --font-family-tertiary:  'Playfair Display', serif;
 
   /* ------ */
   --document-scale-default: 16px;

@@ -7,5 +7,13 @@ header {
         .logo-container img {
             width: 150px;
         }
+
+        .navigation-bar {
+            nav {
+                ul {
+                    list-style: none;
+                }
+            }
+        }
     }
 }

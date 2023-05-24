@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FileIncludeWebpackPlugin = require('file-include-webpack-plugin');
 const RemovePlugin = require('remove-files-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const path = require('path');
 
@@ -42,6 +43,15 @@ module.exports = {
                 ]
             }
         }),
+        new FileManagerPlugin({
+            events: {
+                onEnd: {
+                    copy: [
+                        {source: './src/assets/**/*.png', destination: './static/assets/'}
+                    ]
+                }
+            }
+         }),
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
         }),
