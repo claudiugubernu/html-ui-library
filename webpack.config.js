@@ -47,7 +47,6 @@ module.exports = {
         }),
         new FileIncludeWebpackPlugin({
             source: './src/ui/pages',
-            destination: './ui'
         }),
     ],
     module: {
