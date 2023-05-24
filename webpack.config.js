@@ -70,7 +70,7 @@ module.exports = {
                 test: /\.(png|jpe?g|gif|jp2|webp|svg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/images/[name][ext]',
+                    filename: 'assets/img/[name][ext]',
                 },
             },
             {
