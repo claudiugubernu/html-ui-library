@@ -37,6 +37,9 @@ module.exports = {
                         method: () => true
                     }
                 ],
+                exclude: [
+                    './static/assets'
+                ]
             }
         }),
         new MiniCssExtractPlugin({
@@ -67,7 +70,7 @@ module.exports = {
                 test: /\.(png|jpe?g|gif|jp2|webp|svg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[name][ext]',
+                    filename: 'assets/images/[name][ext]',
                 },
             },
             {

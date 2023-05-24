@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "ui": "npm run build && webpack-dev-server --live-reload --color --port 3000 --static static/ui"
+    "ui": "npm run build && webpack-dev-server --live-reload --color --port 3000 --static static/ui --static ."
   },
   "author": "Claudiu Gubernu",
   "license": "ISC",
